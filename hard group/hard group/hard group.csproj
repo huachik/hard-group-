@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EquipmentSlot.cs" />
+    <Compile Include="Inventory\EquipmentSlot.cs" />
     <Compile Include="Dialogline.cs" />
     <Compile Include="Inventory\Inventory.cs" />
     <Compile Include="Program.cs" />
