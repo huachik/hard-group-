@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dialogline.cs" />
-    <Compile Include="Inventory.cs" />
+    <Compile Include="Inventory\Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="ClassSims.cs" />
