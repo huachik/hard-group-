@@ -20,13 +20,13 @@ public class Inventory
 {
     public int MaxWeight { get; private set; } // Максимальный вес инвентаря
     private List<InventorySlot> Slots { get; set; } // Список ячеек инвентаря
-    private Dictionary<string, CraftingRecipe> CraftingRecipes { get; set; } // Рецепты крафта
+    private Dictionary<string, hard_group.Inventory.CraftingRecipe> CraftingRecipes { get; set; } // Рецепты крафта
 
     public Inventory(int maxWeight)
     {
         MaxWeight = maxWeight;
         Slots = new List<InventorySlot>();
-        CraftingRecipes = new Dictionary<string, CraftingRecipe>();
+        CraftingRecipes = new Dictionary<string, hard_group.Inventory.CraftingRecipe>();
     }
 
     public void AddItem(Item item)
@@ -96,7 +96,7 @@ public class Inventory
 
     public void AddCraftingRecipe(string name, List<Item> ingredients, Item result)
     {
-        CraftingRecipes[name] = new CraftingRecipe(name, ingredients, result);
+        CraftingRecipes[name] = new hard_group.Inventory.CraftingRecipe(name, ingredients, result);
         Console.WriteLine($"Добавлен рецепт: {name}");
     }
 }
@@ -125,19 +125,6 @@ public class Item
     }
 }
 
-public class CraftingRecipe
-{
-    public string Name { get; private set; }
-    public List<Item> Ingredients { get; private set; }
-    public Item Result { get; private set; }
-
-    public CraftingRecipe(string name, List<Item> ingredients, Item result)
-    {
-        Name = name;
-        Ingredients = ingredients;
-        Result = result;
-    }
-}
 
 public class EquipmentSlot
 {
