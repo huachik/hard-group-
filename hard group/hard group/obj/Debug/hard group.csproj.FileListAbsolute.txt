@@ -1,0 +1,7 @@
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\bin\Debug\hard group.exe.config
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\bin\Debug\hard group.exe
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\bin\Debug\hard group.pdb
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\obj\Debug\hard group.csproj.AssemblyReference.cache
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\obj\Debug\hard group.csproj.CoreCompileInputs.cache
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\obj\Debug\hard group.exe
+C:\Users\ЗС\Documents\GitHub\hard-group-\hard group\hard group\obj\Debug\hard group.pdb
