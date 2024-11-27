@@ -2,19 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public class Character
-{
-    public string Name { get; private set; }
-    public int Strength { get; private set; } // Сила персонажа, определяющая максимальный вес
-    public Inventory Inventory { get; private set; }
-
-    public Character(string name, int strength)
-    {
-        Name = name;
-        Strength = strength;
-        Inventory = new Inventory(strength);
-    }
-}
 
 public class Inventory
 {
@@ -101,29 +88,8 @@ public class Inventory
     }
 }
 
-public class InventorySlot
-{
-    public Item Item { get; private set; }
 
-    public InventorySlot(Item item)
-    {
-        Item = item;
-    }
-}
 
-public class Item
-{
-    public string Name { get; private set; }
-    public int Weight { get; private set; }
-    public int Slots { get; private set; } // Количество ячеек, занимаемых предметом
-
-    public Item(string name, int weight, int slots)
-    {
-        Name = name;
-        Weight = weight;
-        Slots = slots;
-    }
-}
 
 public class CraftingRecipe
 {
@@ -136,27 +102,5 @@ public class CraftingRecipe
         Name = name;
         Ingredients = ingredients;
         Result = result;
-    }
-}
-
-public class EquipmentSlot
-{
-    public string Name { get; private set; }
-    public Item EquippedItem { get; private set; }
-
-    public EquipmentSlot(string name)
-    {
-        Name = name;
-    }
-
-    public void EquipItem(Item item)
-    {
-        EquippedItem = item;
-        Console.WriteLine($"Предмет {item.Name} надет на слот {Name}");
-    }
-    public void UnequipItem()
-    {
-        Console.WriteLine($"Предмет {EquippedItem.Name} снят со слота {Name}");
-        EquippedItem = null;
     }
 }

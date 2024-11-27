@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inventory\character.cs" />
     <Compile Include="Inventory\EquipmentSlot.cs" />
     <Compile Include="Dialogline.cs" />
     <Compile Include="Inventory\Inventory.cs" />
+    <Compile Include="Inventory\item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="ClassSims.cs" />
