@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static hard_group.Inventory.Character1;
-namespace hard_group
+
+namespace hard_group.NPC
 {
-    internal class NPC
+    internal class Npc
     {
         public string Name { get; set; }
         public int Relationship { get; set; }
 
-        public NPC(string name)
+        public Npc(string name)
         {
             Name = name;
             Relationship = 50; // Нейтральное отношение

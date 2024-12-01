@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//using static hard_group.Inventory.Inventory;
 namespace hard_group.Inventory
 {
     internal class Character1
@@ -29,7 +29,7 @@ namespace hard_group.Inventory
                 KnowledgeLevel = 0;
                 ExamSuccessRate = 0;
             }
-        }
 
+        }
     }
 }

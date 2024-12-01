@@ -8,7 +8,7 @@ namespace hard_group.NPC
 {
     internal class NPCInteraction // Взаимодействие между NPC
     {
-         public static void NPCChat(NPC npc1, NPC npc2)
+         public static void NPCChat(Npc npc1, Npc npc2)
     {
         Random rand = new Random();
         int interactionOutcome = rand.Next(-15, 15); // Случайный эффект от -15 до +15

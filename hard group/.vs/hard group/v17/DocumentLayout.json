@@ -1,12 +1,205 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\npc\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\npc\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\dialogline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\dialogline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\npc\\npcinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\npc\\npcinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\inventory\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\inventory\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\inventory\\equipmentslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\inventory\\equipmentslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\inventory\\craftingrecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\inventory\\craftingrecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|c:\\users\\dan\\documents\\github\\hard-group-\\hard group\\hard group\\inventory\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\inventory\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\classsims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CEBF3F8-1114-4E6C-86DF-AE3BD8E0BF01}|hard group\\hard group.csproj|solutionrelative:hard group\\classsims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NPC.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\NPC\\NPC.cs",
+              "RelativeDocumentMoniker": "hard group\\NPC\\NPC.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\NPC\\NPC.cs",
+              "RelativeToolTip": "hard group\\NPC\\NPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:57:38.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "item.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\item.cs",
+              "RelativeDocumentMoniker": "hard group\\Inventory\\item.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\item.cs",
+              "RelativeToolTip": "hard group\\Inventory\\item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:02:04.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\App.config",
+              "RelativeDocumentMoniker": "hard group\\App.config",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\App.config",
+              "RelativeToolTip": "hard group\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-01T20:00:55.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\Inventory.cs",
+              "RelativeDocumentMoniker": "hard group\\Inventory\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\Inventory.cs",
+              "RelativeToolTip": "hard group\\Inventory\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:02:00.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EquipmentSlot.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\EquipmentSlot.cs",
+              "RelativeDocumentMoniker": "hard group\\Inventory\\EquipmentSlot.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\EquipmentSlot.cs",
+              "RelativeToolTip": "hard group\\Inventory\\EquipmentSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:01:58.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CraftingRecipe.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\CraftingRecipe.cs",
+              "RelativeDocumentMoniker": "hard group\\Inventory\\CraftingRecipe.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\CraftingRecipe.cs",
+              "RelativeToolTip": "hard group\\Inventory\\CraftingRecipe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:01:53.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "character.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\character.cs",
+              "RelativeDocumentMoniker": "hard group\\Inventory\\character.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Inventory\\character.cs*",
+              "RelativeToolTip": "hard group\\Inventory\\character.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:01:45.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NPCInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\NPC\\NPCInteraction.cs",
+              "RelativeDocumentMoniker": "hard group\\NPC\\NPCInteraction.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\NPC\\NPCInteraction.cs",
+              "RelativeToolTip": "hard group\\NPC\\NPCInteraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:22:28.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Program.cs",
+              "RelativeDocumentMoniker": "hard group\\Program.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Program.cs",
+              "RelativeToolTip": "hard group\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:00:37.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dialogline.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Dialogline.cs",
+              "RelativeDocumentMoniker": "hard group\\Dialogline.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\Dialogline.cs",
+              "RelativeToolTip": "hard group\\Dialogline.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:00:47.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClassSims.cs",
+              "DocumentMoniker": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\ClassSims.cs",
+              "RelativeDocumentMoniker": "hard group\\ClassSims.cs",
+              "ToolTip": "C:\\Users\\Dan\\Documents\\GitHub\\hard-group-\\hard group\\hard group\\ClassSims.cs",
+              "RelativeToolTip": "hard group\\ClassSims.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T20:00:49.275Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

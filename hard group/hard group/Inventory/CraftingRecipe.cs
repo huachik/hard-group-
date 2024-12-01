@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using static hard_group.Inventory.item;
 
 namespace hard_group.Inventory
 {
