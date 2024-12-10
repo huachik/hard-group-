@@ -8,7 +8,7 @@ namespace hard_group.Inventory
 {
     internal class Character1
     {
-        public class Character
+        public class Character 
         {
             // переменные для взаимоотношения героя с нпс
             public int FriendshipLevel { get; set; }
@@ -17,13 +17,12 @@ namespace hard_group.Inventory
 
             public string Name { get; private set; }
             public int Strength { get; private set; } // Сила персонажа, определяющая максимальный вес
-            public Inventory Inventory { get; private set; }
 
             public Character(string name, int strength)
             {
                 Name = name;
                 Strength = strength;
-                Inventory = new Inventory(strength);
+                
                 // отношения
                 FriendshipLevel = 0;
                 KnowledgeLevel = 0;

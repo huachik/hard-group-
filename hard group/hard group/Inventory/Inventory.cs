@@ -1,126 +1,93 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-//using static hard_group.Inventory.item;
 
 public class Inventory
 {
-    public int MaxWeight { get; private set; } // Максимальный вес инвентаря
-    private List<InventorySlot> Slots { get; set; } // Список ячеек инвентаря
-    private Dictionary<string, hard_group.Inventory.CraftingRecipe> CraftingRecipes { get; set; } // Рецепты крафта
+    private List<Item> items;
+    private int maxWeight;
+    private int currentWeight;
+    private Dictionary<string, CraftingRecipe> craftingRecipes;
+    private int strenght;
 
-    public Inventory(int maxWeight)
+    public Inventory(int strength)
     {
-        MaxWeight = maxWeight;
-        Slots = new List<InventorySlot>();
-        CraftingRecipes = new Dictionary<string, hard_group.Inventory.CraftingRecipe>();
+        maxWeight = strength * 10; // Максимальный вес равен силе игрока, умноженной на 10
+        items = new List<Item>();
+        currentWeight = 0;
+        craftingRecipes = new Dictionary<string, CraftingRecipe>();
+        this.strenght = strenght;
     }
 
-    public void AddItem(Item item)
+    public bool AddItem(Item item)
     {
-        if (GetTotalWeight() + item.Weight <= MaxWeight && GetAvailableSlots() >= item.Slots)
+        if (currentWeight + item.Weight <= maxWeight && items.Count < 20) // Максимум 20 слотов
         {
-            Slots.Add(new InventorySlot(item));
-            Console.WriteLine($"Добавлен предмет: {item.Name}");
+            items.Add(item);
+            currentWeight += item.Weight;
+            return true;
         }
-        else
-        {
-            Console.WriteLine("Недостаточно места или превышен максимальный вес!");
-        }
+        return false;
     }
 
-    public void RemoveItem(Item item)
+    public bool RemoveItem(Item item)
     {
-        var removed = Slots.RemoveAll(slot => slot.Item == item);
-        if (removed > 0)
+        if (items.Remove(item))
         {
-            Console.WriteLine($"Удален предмет: {item.Name}");
+            currentWeight -= item.Weight;
+            return true;
         }
-        else
-        {
-            Console.WriteLine("Предмет не найден в инвентаре!");
-        }
-    }
-
-    public int GetTotalWeight()
-    {
-        return Slots.Sum(slot => slot.Item.Weight);
-    }
-
-    public int GetAvailableSlots()
-    {
-        return Slots.Count(slot => slot.Item != null);
+        return false;
     }
 
     public void CraftItem(string recipeName)
     {
-        if (CraftingRecipes.TryGetValue(recipeName, out var recipe))
+        if (craftingRecipes.TryGetValue(recipeName, out CraftingRecipe recipe))
         {
-            if (HasIngredients(recipe.Ingredients))
+            if (HasRequiredItems(recipe))
             {
-                AddItem(recipe.Result);
-                foreach (var ingredient in recipe.Ingredients)
+                foreach (var requirement in recipe.Requirements)
                 {
-                    RemoveItem(ingredient);
+                    RemoveItem(requirement.Item);
                 }
-                Console.WriteLine($"Скрафтил: {recipe.Result.Name}");
+                AddItem(recipe.Result);
+                Console.WriteLine($"Собрали {recipe.Result.Name}");
             }
             else
             {
-                Console.WriteLine("Недостаточно ингредиентов для крафта!");
+                Console.WriteLine("Недостаточно материалов для крафта.");
             }
         }
         else
         {
-            Console.WriteLine("Рецепт не найден!");
+            Console.WriteLine("Рецепт не найден.");
         }
     }
 
-    private bool HasIngredients(List<Item> ingredients)
+    private bool HasRequiredItems(CraftingRecipe recipe)
     {
-        return ingredients.All(ingredient => Slots.Any(slot => slot.Item == ingredient));
+        foreach (var requirement in recipe.Requirements)
+        {
+            var itemCount = items.FindAll(i => i.Name == requirement.Item.Name).Count;
+            if (itemCount < requirement.Count)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public void AddCraftingRecipe(string name, List<Item> ingredients, Item result)
+    public void AddCraftingRecipe(CraftingRecipe recipe)
     {
-        CraftingRecipes[name] = new hard_group.Inventory.CraftingRecipe(name, ingredients, result);
-        Console.WriteLine($"Добавлен рецепт: {name}");
-    }
-}
-
-
-public class EquipmentSlot
-{
-    public string Name { get; private set; }
-    public Item EquippedItem { get; private set; }
-
-    public EquipmentSlot(string name)
-    {
-        Name = name;
+        craftingRecipes[recipe.Name] = recipe;
     }
 
-    public void EquipItem(Item item)
+    public void DisplayInventory()
     {
-        EquippedItem = item;
-        Console.WriteLine($"Предмет {item.Name} надет на слот {Name}");
-    }
-    public void UnequipItem()
-    {
-        Console.WriteLine($"Предмет {EquippedItem.Name} снят со слота {Name}");
-        EquippedItem = null;
-    }
-}
-
-public class CraftingRecipe
-{
-    public string Name { get; private set; }
-    public List<Item> Ingredients { get; private set; }
-    public Item Result { get; private set; }
-
-    public CraftingRecipe(string name, List<Item> ingredients, Item result)
-    {
-        Name = name;
-        Ingredients = ingredients;
-        Result = result;
+        Console.WriteLine("Инвентарь:");
+        foreach (var item in items)
+        {
+            Console.WriteLine($"{item.Name} (Вес: {item.Weight})");
+        }
+        Console.WriteLine($"Текущий вес: {currentWeight}/{maxWeight}");
     }
 }

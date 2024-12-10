@@ -1,23 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using static hard_group.Inventory.item;
+﻿using System.Collections.Generic;
 
-namespace hard_group.Inventory
+public class CraftingRecipe
 {
-    public class CraftingRecipe
-    {
-        public string Name { get; private set; }
-        public List<Item> Ingredients { get; private set; }
-        public Item Result { get; private set; }
+    public string Name { get; set; }
+    public List<CraftingRequirement> Requirements { get; set; }
+    public Item Result { get; set; }
 
-        public CraftingRecipe(string name, List<Item> ingredients, Item result)
-        {
-            Name = name;
-            Ingredients = ingredients;
-            Result = result;
-        }
+    public CraftingRecipe(string name, List<CraftingRequirement> requirements, Item result)
+    {
+        Name = name;
+        Requirements = requirements;
+        Result = result;
     }
 }

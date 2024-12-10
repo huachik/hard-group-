@@ -71,6 +71,29 @@ namespace hard_group
                 npc1.TriggerEvent(player, "help");
                 npc1.TriggerEvent(player, "insult");
                 npc1.TriggerEvent(player, "studyTogether");
+
+
+                var playerInventory = new Inventory(5); // Игрок с силой 5
+
+                Item wood = new Item("Дерево", 1);
+                Item stone = new Item("Камень", 2);
+                Item axe = new Item("Топор", 3);
+
+                playerInventory.AddItem(wood);
+                playerInventory.AddItem(stone);
+
+                playerInventory.DisplayInventory();
+
+                CraftingRecipe axeRecipe = new CraftingRecipe("Создать Топор", new List<CraftingRequirement>
+        {
+            new CraftingRequirement(wood, 2),
+            new CraftingRequirement(stone, 1)
+        }, axe);
+
+                playerInventory.AddCraftingRecipe(axeRecipe);
+
+                playerInventory.CraftItem("Создать Топор");
+                playerInventory.DisplayInventory();
             }
     } 
 
